@@ -15,18 +15,18 @@ import java.util.Map;
 /**
  * 
  * @ClassName: DbUtil
- * @Description: Êı¾İ¿â¹¤¾ßÀà
+ * @Description: æ•°æ®åº“å·¥å…·ç±»
  * @author: Bardon
- * @date: 2017Äê4ÔÂ30ÈÕ ÏÂÎç9:56:52
+ * @date: 2017å¹´4æœˆ30æ—¥ ä¸‹åˆ9:56:52
  * @version1.0
  */
 public class DbUtil {
 
 	/**
-	 * »ñÈ¡Çı¶¯·½·¨
+	 * è·å–é©±åŠ¨æ–¹æ³•
 	 * @Title: getConnection
 	 * @Author: Bardon
-	 * @Time: 2017Äê4ÔÂ30ÈÕ ÏÂÎç10:02:16
+	 * @Time: 2017å¹´4æœˆ30æ—¥ ä¸‹åˆ10:02:16
 	 * @params: @return
 	 * @return: Connection
 	 * @throws
@@ -36,7 +36,7 @@ public class DbUtil {
 		String driver="com.mysql.jdbc.Driver";
 		String url="jdbc:mysql://localhost:3306/bigdata";
 		String user="sa";
-		String password="4545";
+		String password="4545**";
 		try {
 			Class.forName(driver);
 			connection=DriverManager.getConnection(url,user,password);
@@ -46,10 +46,10 @@ public class DbUtil {
 		return connection;
 	}
 	/**
-	 * Êı¾İ¿â²éÑ¯·½·¨
+	 * æ•°æ®åº“æŸ¥è¯¢æ–¹æ³•
 	 * @Title: queryForList
 	 * @Author: Bardon
-	 * @Time: 2017Äê5ÔÂ9ÈÕ ÉÏÎç11:02:04
+	 * @Time: 2017å¹´5æœˆ9æ—¥ ä¸Šåˆ11:02:04
 	 * @params: @param sql
 	 * @params: @param args
 	 * @params: @return
@@ -57,7 +57,7 @@ public class DbUtil {
 	 * @throws
 	 */
 	public static List<Map<String,Object>> queryForList(String sql,String...args){
-		//¶àÌ¬
+		//å¤šæ€
 		List<Map<String,Object>> list=new ArrayList<Map<String,Object>>();
 		PreparedStatement ps=null;
 		ResultSet resultSet=null;
